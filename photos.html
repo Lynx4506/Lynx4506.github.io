@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photography by Lynx — everyday light, travel notes, and cat moments.">
+  <title>Photos · Lynx</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Lynx<span>.</span></a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a class="active" href="photos.html">Photos</a>
+        <a href="writing.html">Writing</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Photography</h1>
+        <p>
+          A growing collection of places, quiet details, and the occasional portrait of my cats pretending they did not just knock something over.
+          Replace the sample images below with your own — drop files into <code>assets/photos/</code> and update the paths.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" role="tablist" aria-label="Photo categories">
+          <button class="filter-btn active" data-filter="all" type="button">All</button>
+          <button class="filter-btn" data-filter="daily" type="button">Daily life</button>
+          <button class="filter-btn" data-filter="travel" type="button">Travel</button>
+          <button class="filter-btn" data-filter="cats" type="button">Cats</button>
+        </div>
+
+        <div class="album-grid">
+          <article class="album-card" data-category="daily">
+            <img src="https://images.unsplash.com/photo-1499781350541-778226f049c5?auto=format&fit=crop&w=900&q=80" alt="Morning light on a desk">
+            <div class="album-body">
+              <h3>Morning desk light</h3>
+              <p>Daily life · Sample album</p>
+            </div>
+          </article>
+
+          <article class="album-card" data-category="cats">
+            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=900&q=80" alt="Cat resting by the window">
+            <div class="album-body">
+              <h3>Window watchers</h3>
+              <p>Cats · Sample album</p>
+            </div>
+          </article>
+
+          <article class="album-card" data-category="travel">
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80" alt="Mountain landscape">
+            <div class="album-body">
+              <h3>Weekend escape</h3>
+              <p>Travel · Sample album</p>
+            </div>
+          </article>
+
+          <article class="album-card" data-category="daily">
+            <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=900&q=80" alt="Books and coffee">
+            <div class="album-body">
+              <h3>After class</h3>
+              <p>Daily life · Sample album</p>
+            </div>
+          </article>
+
+          <article class="album-card" data-category="travel">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80" alt="Forest path">
+            <div class="album-body">
+              <h3>Green hours</h3>
+              <p>Travel · Sample album</p>
+            </div>
+          </article>
+
+          <article class="album-card" data-category="cats">
+            <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?auto=format&fit=crop&w=900&q=80" alt="Cat close-up">
+            <div class="album-body">
+              <h3>Chief supervisors</h3>
+              <p>Cats · Sample album</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© Lynx · Photography collection</span>
+      <span>Replace sample images with your own work</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
