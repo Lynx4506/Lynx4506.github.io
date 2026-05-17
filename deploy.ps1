@@ -32,8 +32,13 @@ if (-not (Test-Path ".git")) {
   git branch -M main
 }
 
-git remote get-url origin *> $null
-if ($LASTEXITCODE -ne 0) {
+$hasOrigin = $false
+try {
+  git remote get-url origin 2>$null | Out-Null
+  if ($LASTEXITCODE -eq 0) { $hasOrigin = $true }
+} catch {}
+
+if (-not $hasOrigin) {
   gh repo view $repoSlug *> $null
   if ($LASTEXITCODE -eq 0) {
     git remote add origin "https://github.com/$repoSlug.git"
